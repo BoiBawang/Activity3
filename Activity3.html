@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="event.js"></script>
+    <title>Create a New Event</title>
+</head>
+<body>
+    <div>
+    <form class ="form" onsubmit="events()">
+        <label>Event type: <input id="type" type="text" required></label><br><br>
+        
+        <label>Event Title: <input id ="title" type="text" required></label><br><br>
+
+        <label >Event dates: </label>             
+        <input id ="dateFrom" type="date" required> to
+        <input id ="dateTo" type="date" required><br><br>
+
+        <label >Posting Date: </label>
+        <input type="date" id="postingDate" name="postingDate" type="date" required><br><br>
+
+        <label for="checkBox1"> Is Registration Required? </label>
+            <input type="checkbox" id="checkBox1" name="checkBox1" value="checkBox1"><br>
+       
+        <label for="checkBox2"> Is this event associated with any Family Programs? </label>
+            <input type="checkbox" id="checkBox2" name="checkBox2" value="checkBox2"><br>
+         
+        <label for="checkBox3"> Upon Registration Complete, Are Users to Receive an Auto Generated Email?  </label>
+            <input type="checkbox" id="checkBox3" name="checkBox3" value="checkBox3"><br>
+        
+        <label for="checkBox4"> Is There a Point of Contact?  </label>
+            <input type="checkbox" id="checkBox4" name="checkBox4" value="checkBox4"><br>
+          
+        <label for="checkBox5"> Is There a Hosting Comman Point of Contact? </label>
+            <input type="checkbox" id="checkBox5" name="checkBox5" value="checkBox5"><br>
+
+        <input type="submit" value="send to server"  onclick="return dates()"/>
+    </form>
+    </div>
+</body>
+</html>
